@@ -1,0 +1,80 @@
+*{padding: 0;margin: 0;}
+
+.page {
+    display: flex;
+}
+
+
+.rect{position:absolute; border:1px dashed #78a6d4; width:0px; height:0px;left:0px; top:0px; overflow:hidden;}
+/* .retc{position:absolute; border:1px solid #CCCCCC; overflow:hidden; background:#EFEFEF} */
+.tools {
+    min-width: 6rem;
+    max-width: 8rem;
+    text-align: center;
+}
+.tool {
+    font-size: 1.5em;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.active {
+    border: solid 1px #000;
+    background-color: #cbe6fc;
+}
+#box {
+    cursor: crosshair;
+    border: 2px solid rgba(0,0,0,.250);
+    flex-shrink: 0;
+}
+.box li {
+    list-style: none;
+    width: 9rem;
+    height: 42px;
+    display: inline-block;
+    /* text-align: center; */
+    cursor: pointer;
+    font: 400 16px/42px microsoft yahei;
+    line-height: 42px;
+    vertical-align: middle;
+    position: relative;
+}
+.box ul {
+    overflow: auto;
+}
+
+.box {
+    height: 42px;
+    width: 1100px;
+    /* margin: 200px auto; */
+    background: #fff;
+    position: relative;
+    border-radius: 7px;
+    
+}
+
+.box img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.box li a {
+    /* display:table-cell; */
+    /* text-align:center; 2 */
+    margin-top: 0;
+    position: absolute;
+    width: 40px;
+    margin-left: 5px;
+}
+
+.box li:hover {
+    border-radius: 7px;
+    background-color: #cbe6fc;
+}
+
+.div {
+    display: inline-block;
+}
